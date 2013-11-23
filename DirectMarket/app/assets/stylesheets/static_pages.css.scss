@@ -240,12 +240,12 @@
         
         img {
             width: 130px;
-            margin-left: -30px;
+            margin-left: -60px;
             position: absolute;
         }
         
         p {
-            margin-left: 200px;
+            margin-left: 120px;
             line-height: 28px;
             
             span {
@@ -257,5 +257,26 @@
     #food-name {
         text-align: center;
         width: 40%;
+    }
+    
+    table {
+        width: 75%;
+        margin: auto;
+        margin-top: 40px;
+        
+        td {
+            width: 80px;
+        }
+        
+        tr {
+            background-color: rgba(217, 190, 36, 1);
+        }
+        
+        #title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: white;
+        }
     }
 }
