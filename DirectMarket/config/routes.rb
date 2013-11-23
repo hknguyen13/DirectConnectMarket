@@ -10,6 +10,7 @@ DirectMarket::Application.routes.draw do
   match '/product', to: 'static_pages#product', via: 'get'
   match '/sub_food_list', to: 'static_pages#sub_food_list', via: 'get'
   match '/market_list', to: 'static_pages#market_list', via: 'get'
+  match '/farmer_product', to: 'static_pages#farmer_product', via: 'get'
 
 #   get '/users(.:format)' => 'users#create'
 

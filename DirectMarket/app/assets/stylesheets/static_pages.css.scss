@@ -40,6 +40,7 @@
         a {
           text-decoration: none;
           color: white;
+          background: transparent;
         }
     }
     
@@ -94,6 +95,7 @@
         a {
           color: green;
           text-decoration: none;
+          background: transparent;
         }
         background: white;
         color: green;
@@ -129,9 +131,9 @@
     }
     
     p {
-        margin-left: -15px;
+        margin-left: -18px;
         margin-top: -7px;
-        width: 5em;
+        width: 7em;
     }
 }
 
@@ -140,7 +142,7 @@
 #food_list {
     .home-button p {
       width: 10em;
-      margin-left: -40px;
+      margin-left: -20px;
     }
     
     #a-z {
@@ -156,6 +158,9 @@
     }
     #row2 {
         margin-top: 355px;
+    }
+    strong {
+        font-size: 2.0em;
     }
 }
 
@@ -276,6 +281,36 @@
             text-align: center;
             font-weight: bold;
             font-size: 1.3em;
+            color: white;
+        }
+    }
+}
+
+
+//User Index Page
+#user_index {
+    z-index: 1;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: white;
+    background: rgba(139, 190, 36, 1);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px rgba(237, 190, 36, 1);
+    
+    th {
+        
+    }
+    
+    a {
+        color: rgba(237, 190, 36, 1);
+        font-weight: bold;
+        margin: 5px;
+        
+        &:hover {
+            background: transparent;
+            text-decoration: none;
             color: white;
         }
     }
