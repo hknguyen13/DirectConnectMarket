@@ -2,9 +2,11 @@
   <div class="span12 pagination-centered img-responsive" id="home-background">
     <img src="assets/farmers_market2.jpg" />
   </div>
+  <% @items.each do |item| %>
+  <% if item.name == "Spinach" && item.sub_category == "Flat-Leaf" %>
   <div class="container">
     <div id="food-name">
-      <h2>Flat-Leaf Spinach</h2>
+      <h2><%= item.name %></h2>
     </div>
     <div id="food-details">
       <div class="img-responsive"><img src="assets/Spinach.png" /></div>
@@ -42,5 +44,6 @@
         <td>Hello</td>
       </tr>
     </table>
+    <% end %>
   </div>
 </div>

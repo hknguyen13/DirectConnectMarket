@@ -16,4 +16,7 @@ class StaticPagesController < ApplicationController
   
   def market_list
   end
+  
+  def farmer_product
+  end
 end
