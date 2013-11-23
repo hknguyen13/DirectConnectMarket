@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131123213844) do
+ActiveRecord::Schema.define(version: 20131123222959) do
+
+  create_table "items", force: true do |t|
+    t.string   "name"
+    t.string   "category"
+    t.string   "subcategory"
+    t.string   "description", limit: 256
+    t.string   "picture"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "markets", force: true do |t|
     t.string   "name"
