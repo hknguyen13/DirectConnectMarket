@@ -1,5 +1,7 @@
 DirectMarket::Application.routes.draw do
   
+  resources :markets
+
   resources :users
 
   root to: 'static_pages#home'
