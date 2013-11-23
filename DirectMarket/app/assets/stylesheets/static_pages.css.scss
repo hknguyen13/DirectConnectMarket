@@ -216,4 +216,40 @@
 //Market List Page
 #market_list .container {
     position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    
+    #food-name, #food-details {
+        background-color: rgba(139, 190, 36, 1); 
+        border: solid 2px rgba(217, 190, 36, 1);
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        p {
+            font-size: 1.4em;
+        }
+    }
+    
+    #food-details {
+        width: 60%;
+        height: 100px;
+        
+        img {
+            
+        }
+        
+        p {
+            margin-left: 200px;
+            line-height: 28px;
+        }
+    }
+    
+    #food-name {
+        text-align: center;
+        width: 40%;
+    }
 }
