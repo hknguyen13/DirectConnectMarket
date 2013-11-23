@@ -55,17 +55,9 @@
     font-size: 2em;
 }
 
-#dark-div {
-    color: transparent;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
 
 //Home Food Buttons
-#row1, #row2 {
+#row1, #row2, #row3, #row4 {
     position: absolute;
     margin-left: 150px;
     margin-top: 60px;
@@ -113,19 +105,36 @@
 }
 
 
-//About page
-#mission-div {
-    margin-top: 50px;
+//Sub Food List Page
+#sub_food_list {
+    .home-button {
+        width: 60px;
+        height: 20px;
+    }
     
-    .border-line {
-        width: 50%;
-        height: 4px;
-        background: black;
-        color: transparent;
-        margin: auto;
-        margin-bottom: 10px;
+    #row1, #row2, #row3, #row4 {
+        margin-left:120px;
+    }
+    #row1 {
+        margin-top: 20px;
+    }
+    #row2 {
+        margin-top: 170px;
+    }
+    #row3 {
+        margin-top: 320px;
+    }
+    #row4 {
+        margin-top: 470px;
+    }
+    
+    p {
+        margin-left: -15px;
+        margin-top: -7px;
+        width: 5em;
     }
 }
+
 
 //Food List Page
 #food_list {
@@ -133,4 +142,72 @@
       width: 10em;
       margin-left: -40px;
     }
+    
+    #a-z {
+        color: white;
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 40px;
+        border-bottom: solid 4px;
+    }
+    
+    #row1 {
+        margin-top: 95px;
+    }
+    #row2 {
+        margin-top: 355px;
+    }
+}
+
+
+//Product Page
+#product {
+    #row1 {
+        width: 80em;
+        margin-left: 200px;
+        margin-top: 150px;
+    }
+    
+    .home-button {
+        img {
+            width: 100px;
+            border-radius: 50px;
+        }
+        
+        p {
+            margin-top: -30px;
+        }
+        
+    }
+}
+
+
+//About Page
+#mission-div {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin-left: 280px;
+    
+    h1, h2, p {
+        color: white;
+    }
+    
+    p {
+        border-radius: 10px;
+        background: rgba(0,0,0,0.7);
+        width: 800px;
+        font-size: 1.3em;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+    
+.border-line {
+    width: 50%;
+    height: 4px;
+    background: white;
+    color: transparent;
+    margin: auto;
+    margin-bottom: 10px;
 }
