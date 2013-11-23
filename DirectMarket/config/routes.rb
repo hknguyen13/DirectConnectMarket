@@ -4,6 +4,9 @@ DirectMarket::Application.routes.draw do
 
   root to: 'static_pages#home'
   match '/about', to: 'static_pages#about', via: 'get'
+  match '/food_list', to: 'static_pages#food_list', via: 'get'
+  match '/product', to: 'static_pages#product', via: 'get'
+  match '/sub_food_list', to: 'static_pages#sub_food_list', via: 'get'
 
 #   get '/users(.:format)' => 'users#create'
 

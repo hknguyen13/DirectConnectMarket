@@ -21,5 +21,6 @@ module DirectMarket
     # config.i18n.default_locale = :de
     
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.encoding = "utf-8"
   end
 end
