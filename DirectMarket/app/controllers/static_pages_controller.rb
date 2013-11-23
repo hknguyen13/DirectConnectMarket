@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+  
+  def products
+  end
+  
+  def farmers
+  end
 end
