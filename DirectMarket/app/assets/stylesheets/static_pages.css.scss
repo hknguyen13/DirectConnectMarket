@@ -1,10 +1,25 @@
 @import "bootstrap";
 
+//Home background image
+#home-background {
+    width: 100%;
+    margin: 0;
+    margin-top: -4em;
+    z-index: 0;
+    
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+}
+
 //Navbar
 .navbar {
-    background: rgba(0,168,37,0.7);
+    background: transparent;
     height: 4em;
     margin-bottom: 0;
+    z-index: 1;
+    position: relative;
 }
 
 .nav-button {
@@ -14,9 +29,11 @@
 }
 
 .link {
-    background: white;
-    padding-bottom: 14px;
-
+    background: rgba(217, 190, 36, 0.9);
+    padding-top: 30px;
+    margin: 0;
+    margin-left: 10px;
+    
     &:hover {
         background: rgba(97,97,97,0.7);
         
@@ -27,7 +44,8 @@
     }
     
     a {
-        color: rgba(0,159,37,1);
+        color: rgba(139, 190, 36, 1);
+        font-weight: bold;
     }
 }
 
@@ -37,34 +55,21 @@
     font-size: 2em;
 }
 
-//Side images on home
-#market-img {
-    width: 205px;
-}
-
-#dark-div {
-    color: transparent;
-    background: rgba(0,0,0,0.5);
-    width: 205px;
-    height: 610px;
-    position: absolute;
-}
-
 
 //Home Food Buttons
-#row1, #row2, #row3 {
+#row1, #row2, #row3, #row4 {
     position: absolute;
-    margin-left: 250px;
-    margin-top: 30px;
-    width: 80%;
+    margin-left: 150px;
+    margin-top: 60px;
+    width: 90%;
+}
+
+#row1 {
+    margin-left : 0;
 }
 
 #row2 {
-    margin-top: 230px;
-}
-
-#row3 {
-    margin-top: 435px;
+    margin-top: 320px;
 }
 
 .home-button {
@@ -72,16 +77,26 @@
     margin-left: 80px;
     padding: 50px;
     width: 100px;
+    height: 50px;
     text-align: center;
-    background: green;
+    background: rgb(139, 190, 36);
     color: white;
-    border: outset 3px gray;
+    border: outset 3px rgb(217, 190, 36);
     border-radius: 10px;
     float: left;
+    font-size: 1.3em;
+    
+    a {
+        color: white;
+    }
     
     &:hover {
-        color: green;
+        a {
+          color: green;
+          text-decoration: none;
+        }
         background: white;
+        color: green;
     }
 }
 
@@ -90,16 +105,109 @@
 }
 
 
-//About page
-#mission-div {
-    margin-top: 50px;
-    
-    .border-line {
-        width: 50%;
-        height: 4px;
-        background: black;
-        color: transparent;
-        margin: auto;
-        margin-bottom: 10px;
+//Sub Food List Page
+#sub_food_list {
+    .home-button {
+        width: 60px;
+        height: 20px;
     }
+    
+    #row1, #row2, #row3, #row4 {
+        margin-left:120px;
+    }
+    #row1 {
+        margin-top: 20px;
+    }
+    #row2 {
+        margin-top: 170px;
+    }
+    #row3 {
+        margin-top: 320px;
+    }
+    #row4 {
+        margin-top: 470px;
+    }
+    
+    p {
+        margin-left: -15px;
+        margin-top: -7px;
+        width: 5em;
+    }
+}
+
+
+//Food List Page
+#food_list {
+    .home-button p {
+      width: 10em;
+      margin-left: -40px;
+    }
+    
+    #a-z {
+        color: white;
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 40px;
+        border-bottom: solid 4px;
+    }
+    
+    #row1 {
+        margin-top: 95px;
+    }
+    #row2 {
+        margin-top: 355px;
+    }
+}
+
+
+//Product Page
+#product {
+    #row1 {
+        width: 80em;
+        margin-left: 200px;
+        margin-top: 150px;
+    }
+    
+    .home-button {
+        img {
+            width: 100px;
+            border-radius: 50px;
+        }
+        
+        p {
+            margin-top: -30px;
+        }
+        
+    }
+}
+
+
+//About Page
+#mission-div {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin-left: 280px;
+    
+    h1, h2, p {
+        color: white;
+    }
+    
+    p {
+        border-radius: 10px;
+        background: rgba(0,0,0,0.7);
+        width: 800px;
+        font-size: 1.3em;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+    
+.border-line {
+    width: 50%;
+    height: 4px;
+    background: white;
+    color: transparent;
+    margin: auto;
+    margin-bottom: 10px;
 }

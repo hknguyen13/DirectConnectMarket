@@ -1,25 +1,19 @@
-<div id="Home">  
-  <div id="row1">
-    <div class="home-button first-btn"><p>Tomatoes</p><img /></div>
-    <div class="home-button"><p>Bananas</p><img /></div>
-    <div class="home-button"><p>Oranges</p><img /></div>
+<div id="Home">
+  <div class="span12 pagination-centered img-responsive" id="home-background">
+    <img src="assets/farmers_market.png" />
   </div>
-  
-  <div id="row2">
-    <div class="home-button first-btn"><p>Potatoes</p><img /></div>
-    <div class="home-button"><p>Squash</p><img /></div>
-    <div class="home-button"><p>Beef</p><img /></div>
+  <div class="dark-div">
+    <div id="row1">
+      <div class="home-button first-btn"><p>Fruits</p><img /></div>
+      <div class="home-button"><p>Onions & Potatoes</p><img /></div>
+      <div class="home-button"><p> <%= link_to "Vegetables", food_list_path %></p><img /></div>
+      <div class="home-button"><p>Herbs</p><img /></div>
+    </div>
+    
+    <div id="row2">
+      <div class="home-button first-btn"><p>Nuts</p><img /></div>
+      <div class="home-button"><p>Ornamentals</p><img /></div>
+      <div class="home-button"><p>Honey</p><img /></div>
+    </div>
   </div>
-  
-  <div id="row3">
-    <div class="home-button first-btn"><p>Celery</p><img /></div>
-    <div class="home-button"><p>Carrots</p><img /></div>
-    <div class="home-button"><p>Apples</p><img /></div>
-  </div>
-  
-  <div id="dark-div">blah</div>
-  <div class="img-responsive" id="market-img"><img src="assets/farmers_market.jpg" /></div>
-  <div class="img-responsive" id="market-img"><img src="assets/farmers_market1.jpg" /></div>
-  <div class="img-responsive" id="market-img"><img src="assets/farmers_market2.jpg" /></div>
-  <div class="img-responsive" id="market-img"><img src="assets/farmers_market3.jpg" /></div>
 </div>

@@ -5,9 +5,12 @@ class StaticPagesController < ApplicationController
   def about
   end
   
-  def products
+  def food_list
   end
   
-  def farmers
+  def sub_food_list
+  end
+  
+  def product
   end
 end
