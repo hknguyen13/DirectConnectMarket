@@ -286,6 +286,16 @@
     margin-top: 30px;
     width: 100%;
     
+    .farmer_name {
+        color: white;
+        
+        &:hover {
+            text-decoration: none;
+            background: transparent;
+            color: black;
+        }
+    }
+    
     #food-name, #food-details {
         background-color: rgba(139, 190, 36, 1); 
         border: solid 2px rgba(217, 190, 36, 1);
@@ -345,6 +355,7 @@
             font-weight: bold;
             font-size: 1.3em;
             color: white;
+            line-height: 30px;
         }
     }
     
