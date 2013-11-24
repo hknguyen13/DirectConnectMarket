@@ -1,0 +1,14 @@
+class CreateOrders < ActiveRecord::Migration
+  def change
+    create_table :orders do |t|
+      t.boolean :buysell
+      t.float :price
+      t.string :unit
+      t.float :quantity
+      t.datetime :orderexpire
+      t.date :delivery
+
+      t.timestamps
+    end
+  end
+end

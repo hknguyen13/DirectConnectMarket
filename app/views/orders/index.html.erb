@@ -1,0 +1,43 @@
+<h1>Existing orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Item</th>
+      <th>Market</th>
+      <th>Buysell</th>
+      <th>Price</th>
+      <th>Unit</th>
+      <th>Quantity</th>
+      <th>Orderexpire</th>
+      <th>Delivery</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+	<td><%= User.find_by(id: order.user_id).firstname %> <%= User.find_by(id: order.user_id).lastname %></td>
+	<td><%= Item.find_by(id: order.item_id).name %></td>
+	<td><%= Market.find_by(id: order.market_id).name %></td>
+        <td><%= if order.buysell then "Buy" else "Sell" end %></td>
+        <td><%= order.price %></td>
+        <td><%= order.unit %></td>
+        <td><%= order.quantity %></td>
+        <td><%= order.orderexpire %></td>
+        <td><%= order.delivery %></td>
+        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order_path %>

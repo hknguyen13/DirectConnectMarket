@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  buysell: false
+  price: 1.5
+  unit: MyString
+  quantity: 1.5
+  orderexpire: 2013-11-23
+  delivery: 2013-11-23
+
+two:
+  buysell: false
+  price: 1.5
+  unit: MyString
+  quantity: 1.5
+  orderexpire: 2013-11-23
+  delivery: 2013-11-23
