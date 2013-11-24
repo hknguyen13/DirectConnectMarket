@@ -1,5 +1,7 @@
 DirectMarket::Application.routes.draw do
   
+  resources :orders
+
   resources :items
 
   resources :markets
