@@ -1,29 +1,44 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @item.category %>
-</p>
-
-<p>
-  <strong>Subcategory:</strong>
-  <%= @item.subcategory %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag @item.picture %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<div id="market_list">
+  <div class="span12 pagination-centered img-responsive" id="home-background">
+    <img src="assets/farmers_market1.jpg" />
+  </div>
+  <div class="container">
+    <div id="food-name">
+      <h2><%= @item.name %></h2>
+    </div>
+    <div id="food-details">
+      <div class="img-responsive"><%= image_tag @item.picture %></div>
+      <p id="show_description"><%= @item.description %></p>
+    </div>
+    
+    <table class="table">
+      <tr id="title">
+        <td>Name</td>
+        <td>Location</td>
+        <td>Price/u</td>
+        <td>Unit</td>
+        <td>Inventory</td>
+        <td>Market</td>
+        <td>Units Ordered</td>
+      </tr>
+      <tr>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Number Input Box</td>
+      </tr>
+      <tr>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+        <td>Hello</td>
+      </tr>
+    </table>
+  </div>
+</div>

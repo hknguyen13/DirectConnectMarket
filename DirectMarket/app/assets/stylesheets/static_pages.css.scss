@@ -45,7 +45,7 @@
     }
     
     a {
-        color: rgba(139, 190, 36, 1);
+        color: #00681D;
         font-weight: bold;
     }
 }
@@ -314,4 +314,10 @@
             color: white;
         }
     }
+}
+
+#food-details {
+    margin-left: 120px;
+    line-height: 28px;
+    font-size: 1em;
 }
