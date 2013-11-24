@@ -208,6 +208,27 @@
         color: white;
     }
     
+    .about-header {
+        padding: 10px;
+        width: 700px;
+        height: 105px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        background: rgb(139, 190, 36);
+        color: white;
+        border: outset 3px rgb(217, 190, 36);
+        border-radius: 10px;
+    }
+    
+    .lower {
+        height: 65px;
+    }
+    
+    #producer {
+        font-size: 1em;
+    }
+    
     p {
         border-radius: 10px;
         background: rgba(0,0,0,0.7);
