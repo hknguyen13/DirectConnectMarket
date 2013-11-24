@@ -10,32 +10,33 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :buysell %><br>
-    <%= f.check_box :buysell %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :unit %><br>
-    <%= f.text_field :unit %>
-  </div>
-  <div class="field">
-    <%= f.label :quantity %><br>
-    <%= f.text_field :quantity %>
-  </div>
-  <div class="field">
-    <%= f.label :orderexpire %><br>
-    <%= f.date_select :orderexpire %>
-  </div>
-  <div class="field">
-    <%= f.label :delivery %><br>
-    <%= f.date_select :delivery %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="section">
+    <div class="field">
+      <%= f.label :buysell %><br>
+      <%= f.check_box :buysell %>
+    </div>
+    <div class="field">
+      <%= f.label :price %><br>
+      <%= f.text_field :price %>
+    </div>
+    <div class="field">
+      <%= f.label :unit %><br>
+      <%= f.text_field :unit %>
+    </div>
+    <div class="field">
+      <%= f.label :quantity %><br>
+      <%= f.text_field :quantity %>
+    </div>
+    <div class="field">
+      <%= f.label :orderexpire %><br>
+      <%= f.date_select :orderexpire %>
+    </div>
+    <div class="field">
+      <%= f.label :delivery %><br>
+      <%= f.date_select :delivery %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
   </div>
 <% end %>

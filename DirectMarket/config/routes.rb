@@ -4,9 +4,13 @@ DirectMarket::Application.routes.draw do
 
   resources :items
 
-  resources :markets
+  resources :markets do
+    resources :orders
+  end
 
-  resources :users
+  resources :users do
+    resources :orders
+  end
 
   root to: 'static_pages#home'
   match '/about', to: 'static_pages#about', via: 'get'
