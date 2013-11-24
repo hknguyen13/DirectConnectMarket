@@ -24,8 +24,9 @@
         <td><%= market.city %></td>
         <td><%= market.state %></td>
         <td><%= market.day %></td>
-        <td><%= market.starttime %></td>
-        <td><%= market.endtime %></td>
+        <td><%= market.starttime.hour %></td>
+        <td><%= market.endtime.hour %></td>
+        <td><%= link_to 'Orders', market_orders_path(market) %></td>
         <td><%= link_to 'Show', market %></td>
         <td><%= link_to 'Edit', edit_market_path(market) %></td>
         <td><%= link_to 'Destroy', market, method: :delete, data: { confirm: 'Are you sure?' } %></td>

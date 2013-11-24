@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-DirectMarket::Application.config.secret_key_base = secure_token
+DirectMarket::Application.config.secret_key_base = '442425e7ae979b69bc594d89c0d01eca'

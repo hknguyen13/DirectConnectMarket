@@ -14,3 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore editor files
+*~
+
+Gemfile.lock
+
+# don't store the application secret key
+DirectMarket/config/initializers/secret_token.rb

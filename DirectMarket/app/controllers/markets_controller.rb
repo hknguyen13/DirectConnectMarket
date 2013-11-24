@@ -1,5 +1,5 @@
 class MarketsController < ApplicationController
-  before_action :set_market, only: [:show, :edit, :update, :destroy]
+  before_action :set_market, only: [:show, :edit, :update, :destroy, :orders]
 
   # GET /markets
   # GET /markets.json
@@ -19,6 +19,10 @@ class MarketsController < ApplicationController
 
   # GET /markets/1/edit
   def edit
+  end
+
+  # GET /markets/1/orders
+  def orders
   end
 
   # POST /markets
