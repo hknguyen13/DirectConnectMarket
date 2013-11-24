@@ -83,6 +83,37 @@
     margin-top: 320px;
 }
 
+#Home .home-button {
+    a {
+        color: white;
+        font-size: 1.3em;
+        margin-left: -19.5px;
+        margin-top: -4px;
+        vertical-align: middle;
+        line-height: 30px;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+    
+    &:hover {
+        a {
+            color: green;
+            text-decoration: none;
+            background: transparent;
+        }
+    }
+}
+
+#sub_food_list .home-button {
+    p {
+        font-size: 1.3em;
+        margin-left: -53px;
+        line-height: 30px;
+    }
+}
+
 .home-button {
     margin: 10px;
     margin-left: 80px;
@@ -99,16 +130,6 @@
     
     a {
         color: white;
-        font-size: 1.3em;
-        margin-left: -19.5px;
-        margin-top: -4px;
-        vertical-align: middle;
-        line-height: 30px;
-    }
-    
-    p {
-        font-size: 1.3em;
-        line-height: 30px;
     }
     
     &:hover {
@@ -311,7 +332,8 @@
         margin-top: 40px;
         
         td {
-            width: 80px;
+            width: 90px;
+            font-size: 1.3em;
         }
         
         tr {
@@ -331,8 +353,7 @@
     }
     
     .add-btn {
-        width: 30px;
-        width: 30px;
+        width: 40px;
         margin-left: 70px;
         margin-top: -28px;
         border-radius: 50px;
@@ -340,6 +361,7 @@
         background: rgba(139, 190, 36, 1);
         border: solid 2px white;
         color: white;
+        text-align: center;
         
         &:hover {
             background: white;
@@ -388,6 +410,32 @@
 
 //Farmer Product Page
 #farmer_product {
+    
+    #ask {
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        background: rgb(235, 227, 17);
+        margin-left: 90px;
+        margin-top: 20px;
+        text-align: center;
+        
+        p {
+            font-size: 1.2em;
+            color: #12be24;
+            margin: 5px;
+            font-weight: bold;
+        }
+        
+        &:hover {
+            background-color: white;
+            
+            p {
+                color: black;
+            }
+        }
+    }
     
     h1 {
         position: absolute;
@@ -507,6 +555,14 @@
             color: #12be24;
             margin: 5px;
             font-weight: bold;
+        }
+        
+        &:hover {
+            background-color: white;
+            
+            p {
+                color: black;
+            }
         }
     }
     
