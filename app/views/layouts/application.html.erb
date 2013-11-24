@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DirectMarket</title>
+  <title>FreshHub</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="navbar">
-    <div class="nav-button" id="logo">Direct Market Connection</div>
+    <div class="nav-button" id="logo"><img class="img-responsive" src="assets/Logo.png" /></div>
     <div class="nav-button link"><%= link_to 'Home',    root_path,    id: "nav-home" %></div>
     <div class="nav-button link"><%= link_to 'About',   about_path,   id: "nav-about" %></div>
     <div class="nav-button link"><%= link_to 'Users',   users_path,   id: "nav-about" %></div>
